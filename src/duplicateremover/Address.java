@@ -1,27 +1,27 @@
 package duplicateremover;
 
 public class Address {
-    private int vendor_id;
-    private String vendor_details;
+    private int index;
+    private String address;
 
-    public Address(int vendor_id, String vendor_details) {
-        this.vendor_id = vendor_id;
-        this.vendor_details = vendor_details;
+    public Address(int index, String address) {
+        this.index = index;
+        this.address = address;
     }
 
     @Override
     public String toString() {
         return "duplicateremover.Address{" +
-                "vendor_id=" + vendor_id +
-                ", vendor_details='" + vendor_details + '\'' +
+                "index=" + index +
+                ", address='" + address + '\'' +
                 '}';
     }
 
-    public int getVendor_id() {
-        return vendor_id;
+    public int getIndex() {
+        return index;
     }
 
-    public String getVendor_details() {
-        return vendor_details;
+    public String getAddress() {
+        return address;
     }
 }

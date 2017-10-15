@@ -43,7 +43,7 @@ public class DuplicateRemover {
             out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outFileName), "UTF-8"));
             out.flush();
             for (Address a : inputArrayList) {
-                out.write("Vendor_ID: " + a.getVendor_id() + "  Vendor_Details: " + a.getVendor_details() + "\n");
+                out.write("Index: " + a.getIndex() + "  Address: " + a.getAddress() + "\n");
             }
             out.close();
 
